@@ -229,7 +229,7 @@ Devvit.addCustomPostType({
         }
       } else {
         setAttempts(prevAttempts => prevAttempts + 1);
-        if (attempts >= 2) {
+        if (attempts >= 3) {
           setGameResult('incorrect');
         }
       }
@@ -328,6 +328,7 @@ Devvit.addCustomPostType({
           <vstack gap="medium" alignment="center middle">
             <text size="large">About the Music Guessing Game</text>
             <text>Try to guess the song from a partial name. The faster you guess, the more points you earn!</text>
+            <text>5 points if you do not use the clue, else 2 points, you have 3 attempts</text>
           </vstack>
         </vstack>
     );
